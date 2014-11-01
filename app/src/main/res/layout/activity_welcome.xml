@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ahmadnaser.employeedbapp.WelcomeActivity">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Jobs"
+        android:id="@+id/btnJobs"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerInParent="true"
+        android:onClick="goToJobsActivity"
+        />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Employees"
+        android:id="@+id/btnEmployees"
+        android:layout_below="@+id/btnJobs"
+        android:layout_alignStart="@+id/btnJobs"
+        android:onClick="goToEmployeesActivity"
+        />
+
+</RelativeLayout>
